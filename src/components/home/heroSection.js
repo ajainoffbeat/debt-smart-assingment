@@ -9,7 +9,7 @@ const HeroSection = () => {
           <div className="hero-left">
             <div className="breadcrumbs">
               <StaticImage
-                src="../images/icons/home.svg"
+                src="../../images/icons/home.svg"
                 alt="home-icon"
                 placeholder="home"
               />
