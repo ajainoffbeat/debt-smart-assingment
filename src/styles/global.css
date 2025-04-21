@@ -1,0 +1,305 @@
+/* File: src/styles/global.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Rashi+Hebrew:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Rashi Hebrew", serif !important;
+  line-height: 1.6;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: #2563eb;
+}
+
+/* Header and Logo */
+.site-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1rem 0; */
+  border-bottom: 1px solid #eaeaea;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* Disclaimer Banner */
+.disclaimer-banner {
+  background-color: rgba(221, 221, 221, 1);
+  color: rgba(145, 138, 138, 1);
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: rgba(0, 64, 52, 1);
+  color: white;
+  padding: 2rem 0;
+  height: 370px;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-left {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.hero-left h1 {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 120%;
+}
+
+.hero-right {
+  flex: 1;
+  position: relative;
+}
+
+.breadcrumbs {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.breadcrumbs a {
+  color: #e2e8f0;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-left p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.cta-button {
+  background-color: rgba(58, 233, 67, 1);
+  font-family: "Noto Rashi Hebrew", sans-serif;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 380px;
+}
+
+.hero-image {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.hero-image.right {
+  position: absolute;
+  right: -59px;
+  bottom: -8px;
+}
+
+/* Navigation Tabs */ 
+.nav-tabs {
+  display: flex;
+  /* justify-content: flex-start; */
+  white-space: nowrap;
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #ffffff;
+}
+
+.tab-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+  color: black;
+  cursor: pointer;
+}
+
+.tab-item.active {
+  border-bottom-color: rgba(70, 58, 233, 1);
+}
+
+/* .tab-item:hover {
+  color: #2563eb;
+} */
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Top Choice Card */
+.top-choice-card {
+  position: absolute;
+  top: -50px;
+  right: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+
+.top-choice-label {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #22c55e;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+}
+
+.company-logo {
+  margin-right: 1rem;
+}
+
+.company-info h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.star {
+  color: #f59e0b;
+}
+
+.rating-score {
+  font-weight: 600;
+}
+
+.rating-count {
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+/* Rankings List */
+.rankings-list {
+  border-left: 3px solid rgba(70, 58, 233, 1);
+  padding-left: 1.5rem;
+  margin-top: 2rem;
+}
+
+.ranking-item {
+  margin-bottom: 1.25rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.partner-link {
+  font-weight: 700;
+  color: rgba(0, 64, 52, 1);
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  
+  .hero-left {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .top-choice-card {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  
+  .nav-tabs {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section {
+    height: auto;
+  }
+
+  .hero-image.left {
+    height: 283px;
+    width: auto !important;
+    object-fit: contain;
+}
+  .hero-image.right {
+    object-fit: contain;
+    height: 100px;
+    width: 160px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+.tab-item {
+  flex-direction: column;
+}
+}
+
+@media (max-width: 1024px) {
+  .hero-image.left {
+    width: 400px;
+}
+  .hero-image.right {
+    position: absolute;
+    right: 1px;
+    bottom: -10px;
+    width: 200px;
+}
+}
